@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div>
+       <form name="calculator" class="form">
+           <h1>Arithmetic Calculator</h1>
+
+           <input type="text" name="display" class="screen" placeholder="0" id="display" readonly="readonly"><br>
+           <input type="text" name="answer" class="screen" id="response" readonly="readonly"><br>
+
+           <input type="button" value="9" onclick="numbers(this)">
+           <input type="button" value="8" onclick="numbers(this)">
+           <input type="button" value="7" onclick="numbers(this)">
+           <input type="button" value="." onclick="operators(this)" id="dot"><br>
+
+           <input type="button" value="6" onclick="numbers(this)">
+           <input type="button" value="5" onclick="numbers(this)">
+           <input type="button" value="4" onclick="numbers(this)">
+           <input type="button" value="+" onclick="operators(this)"><br>
+
+           <input type="button" value="3" onclick="numbers(this)">
+           <input type="button" value="2" onclick="numbers(this)">
+           <input type="button" value="1" onclick="numbers(this)">
+           <input type="button" value="*" onclick="operators(this)" id="mul"><br>
+            
+           <input type="button" value="0" onclick="numbers(this)">
+           <input type="button" value="/" onclick="operators(this)">
+           <input type="button" value="%" onclick="operators(this)">
+           <input type="button" value="-" onclick="operators(this)"><br>
+
+           <input type="button" value="CE" onclick="buttonClr()" id="clear">
+           <input type="button" value="&#8592;" onclick="backSpace()" id="del">
+           <input type="button" value="=" onclick="compute()" id="equal">
+        </form> 
+    </div>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
